@@ -1,18 +1,21 @@
 'use client'
-import { cn } from "@/lib/utils";
-import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
-import ShimmerButton from "@/components/magicui/shimmer-button";
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import { BorderBeam } from "@/components/magicui/border-beam";
 import Link from "next/link";
 import Globe from "@/components/ui/globe";
+import { motion } from "framer-motion";
 
 export default function HeroSection2() {
     return (
-        <section className="w-full mb-[0px] lg:px-0 px-5 bg-transparent ">
-            <div className=" relative md:flex-row flex-col flex flex-start justify-between  overflow-hidden bg-background py-[100px] md:py-[180px] max-w-full lg:max-w-[1200px] m-auto ">
+        <motion.div initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.3 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 0 }
+        }} className="w-full mb-[0px] lg:px-0 px-5 bg-transparent ">
+
+            <div className=" relative md:flex-row flex-col flex flex-start justify-between  overflow-hidden bg-background py-[100px] md:py-[180px] container ">
 
                 <div className="w-full md:w-[55%] ">
                     <h2 className="text-[38px] md:text-[58px] font-medium leading-[44px] md:leading-[68px]  bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text text-transparent whitespace-pre-wrap  lg:text-[56px]  tracking-tighter text-black dark:text-white  lg:leading-[60px]">Seamless Payment Solutions for Freelancers and Entrepreneurs</h2>
@@ -31,7 +34,7 @@ export default function HeroSection2() {
                     <Globe className="top-[100%] md:-top-[35%] right-0 " />
                 </div>
             </div>
-        </section>
+        </motion.div>
     )
 
 

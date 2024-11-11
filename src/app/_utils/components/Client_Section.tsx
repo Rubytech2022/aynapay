@@ -35,7 +35,7 @@ const data = [
 
 export default function ClientSection() {
     return (
-        <section className=" client_section mt-[80px] md:mt-[0px] mb-[60px] lg:mt-[80px] lg:mb-[80px] max-w-full lg:max-w-[1200px] px-5 lg:px-0">
+        <section className=" client_section mt-[80px] md:mt-[0px] mb-[60px] lg:mt-[80px] lg:mb-[80px] container ">
             {/* <h3 className="text-center text-sm font-semibold text-gray-600 pb-[30px] px-10 md:px-0">
                 {" "}
                 TRUSTED BY TEAMS FROM AROUND THE WORLD

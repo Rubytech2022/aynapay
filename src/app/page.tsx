@@ -9,7 +9,7 @@ import ContactUs from "./_utils/components/Contact__Us";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between p-0 lg:p-[70px] ">
+    <main className=" flex flex-col items-center justify-between p-0 lg:p-[70px] ">
       <HeroSection2 />
       <ClientSection />
       <FeaturesSection />
