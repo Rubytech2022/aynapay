@@ -71,7 +71,7 @@ const features = [
     {
         title: 'Global coverage',
         desc: 'Access seamless payments with global coverage, connecting your business to customers worldwide. Expand effortlessly with reliable, cross-border transactions.',
-        compo: <div className="py-[80px] md:py-[60px]"><Globe className=" md:top-0 -top-[25%]"  /></div>
+        compo: <div className="py-[80px] md:py-[60px] absolute"><Image src="/globe.png" width={300} height={200} alt="" className=" object-contain" /></div>
     },
 ]
 

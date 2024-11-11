@@ -5,6 +5,7 @@ import HeroSection2 from "./_utils/components/Hero_Section2";
 import FeaturesSection from "./_utils/components/Features_Section";
 import WatchInAction from "./_utils/components/WatchInAction";
 import HowSection from "./_utils/components/How_Section";
+import ContactUs from "./_utils/components/Contact__Us";
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
       <ClientSection />
       <FeaturesSection />
       <HowSection/>
-      <WatchInAction />
+      {/* <WatchInAction /> */}
       <MarqueeReviewSection />
+      <ContactUs />
       <CTA_Section />
     </main>
   );
