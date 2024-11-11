@@ -20,7 +20,7 @@ export default function ContactUs() {
 
 
     return (
-        <div className="w-full max-w-[900px] mx-auto p-4 my-[80px] md:grid grid-cols-5 gap-5">
+        <div id='contact' className="w-full max-w-[900px] mx-auto p-4 my-[80px] md:grid grid-cols-5 gap-5">
             <div className=' col-span-2 pb-10 md:pb-0'>
                 <h3 className='text-[14px] font-medium text-primary pb-5'>CONTACT US</h3>
                 <div className='max-w-[340px] flex-wrap text-[32px] font-semibold flex items-center'>{`Let's`} Connect <p className='mx-[10px] w-[60px] h-[20px] rounded-full bg-gradient-to-r from-emerald-600 to-green-600'></p> Get in Touch with Us</div>
@@ -47,9 +47,9 @@ export default function ContactUs() {
                 </div>
 
             </div>
-            <form className="space-y-6  col-span-3 py-5 rounded-lg p-5 ml-0 md:ml-20 shadow-md ">
-                <div className=' grid grid-cols-2 gap-5'>
-                    <div className="space-y-2">
+            <form className="space-y-6  col-span-3 py-5 rounded-lg p-5 ml-0 md:ml-20 shadow-md dark:bg-neutral-900 bg-neutral-50">
+                <div className=' md:grid grid-cols-2 gap-5'>
+                    <div className="space-y-2 pb-2">
                         <Label htmlFor="name">Name</Label>
                         <Input
                             id="name"
@@ -73,8 +73,8 @@ export default function ContactUs() {
                         />
                     </div>
                 </div>
-                <div className=' grid grid-cols-2 gap-5'>
-                    <div className="space-y-2">
+                <div className=' md:grid grid-cols-2 gap-5'>
+                    <div className="space-y-2 pb-2">
                         <Label htmlFor="website">Website</Label>
                         <Input
                             id="website"

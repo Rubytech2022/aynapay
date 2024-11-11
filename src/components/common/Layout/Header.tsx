@@ -39,7 +39,7 @@ export default function Header() {
                     <MbMenu />
                     <div className="hidden lg:flex items-center ml-5">
                        
-                        <Button className=" rounded-full bg-primary hover:bg-primary tracking-tight text-base dark:bg-white">Contact us</Button>
+                        <Button onClick={() => scrollToElement('contact')} className=" rounded-full bg-primary hover:bg-primary tracking-tight text-base dark:bg-white">Contact us</Button>
                     </div>
                 </nav>
             </div>

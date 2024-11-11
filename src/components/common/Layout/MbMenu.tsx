@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/sheet"
 import { MenuIcon } from "lucide-react"
 import Link from "next/link"
+import { useState } from "react"
 
 const menu = [
     {
@@ -40,8 +41,9 @@ function scrollToElement(id: string) {
   }
 
 export function MbMenu() {
+    const [open, setOpen] = useState(false);
     return (
-        <Sheet >
+        <Sheet  open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
                 <Button className="block lg:hidden bg-transparent tracking-tight text-primary dark:text-white text-base py-0 pr-5 w-0">
                     <MenuIcon className="w-[28px] h-[28px] text-primary dark:text-white" />
@@ -57,7 +59,10 @@ export function MbMenu() {
                 <div className="">
                     <ul >
                         {menu.map((item, index) => (
-                            <li onClick={() => scrollToElement(item.link)} key={index} className=" cursor-pointer my-5 text-[17px] ">
+                            <li onClick={() => {
+                                scrollToElement(item.link);
+                                setOpen(false);
+                            }} key={index} className=" cursor-pointer my-5 text-[17px] ">
                                 {item?.name}
                             </li>
                         ))}
