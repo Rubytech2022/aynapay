@@ -86,7 +86,7 @@ export default function FeaturesSection() {
                     features?.map((item, idx) => (
                         <MagicCard
                             key={idx}
-                            className="cursor-pointer shadow-2xl  p-5"
+                            className="cursor-pointer shadow-2xl p-5"
                             gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
                         >
                             <h3 className="text-[20px] font-medium">{item.title}</h3>

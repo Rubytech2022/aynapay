@@ -68,22 +68,29 @@
   }
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-
-.container{
+.container {
   @apply max-w-[1140px] px-4 mx-auto;
 }
 
 .section {
-  @apply py-[60px]; 
+  @apply py-[60px];
 }
 
-.section-top{
+.section-top {
   @apply pt-[60px];
 }
-.section-bottom{
+.section-bottom {
   @apply pb-[60px];
+}
+
+.heading-1 {
+  @apply text-4xl md:text-5xl xl:text-6xl font-medium bg-gradient-to-br  from-black from-30%  to-black/40 bg-clip-text text-transparent whitespace-pre-wrap tracking-tighter text-black;
+}
+
+.paragraph {
+  @apply text-[14px] xl:text-[16px];
 }

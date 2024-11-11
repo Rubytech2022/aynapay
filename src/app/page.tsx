@@ -3,7 +3,6 @@ import { MarqueeReviewSection } from "./_utils/components/Review_Section";
 import CTA_Section from "./_utils/components/CTA_Section";
 import HeroSection2 from "./_utils/components/Hero_Section2";
 import FeaturesSection from "./_utils/components/Features_Section";
-import WatchInAction from "./_utils/components/WatchInAction";
 import HowSection from "./_utils/components/How_Section";
 import ContactUs from "./_utils/components/Contact__Us";
 
@@ -14,7 +13,6 @@ export default function Home() {
       <ClientSection />
       <FeaturesSection />
       <HowSection/>
-      {/* <WatchInAction /> */}
       <MarqueeReviewSection />
       <ContactUs />
       <CTA_Section />
