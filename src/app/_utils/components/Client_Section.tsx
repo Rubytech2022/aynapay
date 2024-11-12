@@ -35,16 +35,12 @@ const data = [
 
 export default function ClientSection() {
     return (
-        <section className=" client_section mt-[80px] md:mt-[0px] mb-[60px] lg:mt-[80px] lg:mb-[80px] container ">
-            {/* <h3 className="text-center text-sm font-semibold text-gray-600 pb-[30px] px-10 md:px-0">
-                {" "}
-                TRUSTED BY TEAMS FROM AROUND THE WORLD
-            </h3> */}
+        <section className="container section-bottom">
             <div className="relative flex w-full flex-col items-center justify-center overflow-hidden  bg-background">
                 <Marquee pauseOnHover className="[--duration:20s] ">
                     {data?.map((item, idx) => (
                         <div className="" key={idx}>
-                            <Image className="h-[40px] w-28 px-2 " src={item?.url} alt="client" width={100} height={80} />
+                            <Image className="h-[48px] w-auto px-2 " src={item?.url} alt="client" width={100} height={80} />
                         </div>
                     ))}
                 </Marquee>

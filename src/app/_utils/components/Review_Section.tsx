@@ -74,7 +74,7 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative w-[300px] cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative w-[300px] cursor-pointer overflow-hidden rounded-xl p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -97,16 +97,18 @@ const ReviewCard = ({
 
 export function MarqueeReviewSection() {
   return (
-    <div id="testimonials" className=" md:max-w-[1400px] mx-auto  px-5 md:px-0 relative flex my-[80px] lg:my-[120px] w-full flex-col items-center justify-center overflow-hidden bg-background ">
-      <h2 className="text-[28px] md:text-[36px] pb-[30px] font-medium bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center leading-none text-transparent dark:from-white dark:to-slate-900/10">What Users Are Saying</h2>
+    <div id="testimonials" className="container section">
+      <h2 className="heading-2 text-center">What Users Are Saying</h2>
 
+      <div className="relative">
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review, idx) => (
           <ReviewCard key={idx} {...review} />
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-[4vw] bg-gradient-to-r from-white via-white/60 dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-[4vw] bg-gradient-to-l from-white via-white/60 dark:from-background"></div>
+      </div>
     </div>
   );
 }
